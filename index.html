@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Apakah kamu penasaran, berapa match yang harus kamu menangkan untuk mencapai target winrate kamu?"
+    />
+    <meta
+      name="keywords"
+      content="cara menghitung wr, situs penghitung wr, mobile legends, hitung wr, website penghitung wr, penghitung wr"
+    />
+    <meta
+      property="og:description"
+      content="Apakah kamu penasaran, berapa match yang harus kamu menangkan untuk mencapai target winrate kamu?"
+    />
+
+    <meta
+      name="google-site-verification"
+      content="Byo--K5Z3I8yDp7aTJTQW1z9GRrNlgHxNSKG2UBqt6U"
+    />
+
+    <!-- <script type='text/javascript' src='//pl16595215.effectivecpmgate.com/e0/25/bf/e025bf22bb956752813c0a3966661849.js'></script> -->
+
+    <title>Jepa</title>
+    <link
+      rel="shortcut icon"
+      href="assets/img/hello.png"
+      type="image/x-icon"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+
+  <body>
+    <div class="container pb-4">
+      <div class="row justify-content-center">
+        <div
+          class="bg-dark mb-4 py-1 text-center welcomeMsg py-sm-2"
+          id="welcomeMsg"
+        >
+          <p class="animation mb-0 text-truncate">Jepa</p>
+        </div>
+        <div class="col-lg-6 col-md-9 col-sm-9">
+          <div class="text-center mb-3 d-flex flex-column align-items-center">
+            <a href="https://takapedia.com/" target="_blank">
+              <img class="logo-img" src="assets/img/hello.png" />
+            </a>
+          </div>
+
+          <div class="card mb-3">
+            <form class="">
+              <div class="mb-3">
+                <label class="mb-1" for="idMatch">Total match Kamu</label>
+                <input
+                  type="number"
+                  placeholder="Cth: 259"
+                  autofocus
+                  autocomplete="off"
+                  id="tMatch"
+                  class="form-control"
+                />
+              </div>
+              <div class="mb-3">
+                <label class="mb-1" for="tWr">Total WR Kamu</label>
+                <input
+                  type="number"
+                  placeholder="Cth: 76.4"
+                  step="any"
+                  autocomplete="off"
+                  id="tWr"
+                  class="form-control"
+                />
+              </div>
+              <div class="mb-3">
+                <label class="mb-1" for="wrReq"
+                  >Kamu pengen WR berapa sayang?</label
+                >
+                <input
+                  type="number"
+                  placeholder="Cth: 80"
+                  step="any"
+                  autocomplete="off"
+                  id="wrReq"
+                  class="form-control"
+                />
+              </div>
+              <a
+                type="button"
+                id="hasil"
+                class="cta cta-primary d-block w-100 mt-4"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-calculator-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm2 .5v2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0-.5.5m0 4v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5M4.5 9a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 12.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5M7.5 6a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM7 9.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5m.5 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM10 6.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5m.5 2.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5z"
+                  />
+                </svg>
+                Result</a
+              >
+              <!-- <button
+                class="btn btn-primary d-block w-100 mt-4"
+                type="button"
+                id="hasil"
+              >
+                Hasil
+              </button> -->
+            </form>
+          </div>
+          <span id="resultText" class="text-center d-block font-nunito"> </span>
+
+          <hr />
+          <a href="winlose.html" class="text-center d-block mb-2"
+            >Cek total win atau lose</a
+          >
+          <a href="losestreak.html" class="text-center d-block mb-2"
+            >Hitung WR dengan lose streak</a
+          >
+
+          <hr class="mt-2" />
+          <p class="text-center mb-0">Copyright &copy; 2024 Jepa</p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-206846692-3"
+    ></script>
+
+    <script src="assets/js/global.js"></script>
+    <script src="assets/js/home.js"></script>
+  </body>
+</html>
